@@ -22,7 +22,14 @@ assignments : List
     list of the literature peak assignments
 
 """
-
+four_peak = {
+    'means': [1627, 1650, 1679,1700],
+    'uncertainties': [(1616, 1637), (1638, 1662), (1663, 1696), (1697, 1703)],
+    #'relative_uncertainties': [10, 12, 16,3],
+    'relative_uncertainties': [2, 2, 2,2],
+    'assignments': ['aggregate \u03B2-strand/\u03B2-sheet',
+                    'random coils + \u03B1 helices', '\u03B2-turns', 'intermolecular \u03B2-sheets (weak)']
+}
 
 # Dong et. al., Biochemistry. 1990
 dong_h2o_1990 = {
@@ -93,14 +100,23 @@ hu_Kaplan_Cebe_2006_modified = {
                     'turns', 'turns', 'intermolecular beta_sheets (weak)']
 }
 
-four_peak = {
-    'means': [1627,  1650, 1679,1700],
-    'uncertainties': [(1616, 1637), (1638, 1662), (1663, 1696), (1697, 1703)],
-    #'relative_uncertainties': [10, 12, 16,3],
-    'relative_uncertainties': [2, 2, 2,2],
-    'assignments': ['aggregate \u03B2-strand/\u03B2-sheet',
-                    'random coils + \u03B1 helices', '\u03B2-turns', 'intermolecular \u03B2-sheets (weak)']
+
+#from ftir.modeling.peak_definitions import hu_Kaplan_Cebe_2006_actual
+hu_Kaplan_Cebe_2006_rounded = {
+    'means': [1610, 1619, 1625, 1633,  1642, 1650, 1659, 1667, 1679, 1692, 1700],
+    'uncertainties': [(1605, 1615), (1616, 1621), (1622, 1627), (1628, 1637),
+                      (1638, 1646), (1647, 1655), (1656, 1662), (1663, 1670),
+                      (1671, 1685), (1686, 1696), (1697, 1703)],
+    'relative_uncertainties': [5, 2.5, 2.5, 4.5, 4, 4, 3, 3.5, 7, 5, 3],
+    'assignments': ['(Tyr) side chains/aggregate strands', 'aggregate \u03B2-strand/\u03B2-sheet(weak)', 
+                    'intermolecular \u03B2-sheet (strong)', 'intramolecular \u03B2-sheet (strong)^b',
+                    'random coils/extended', 'random coils', '\u03B1-helices', 'turns',
+                    'turns', 'turns', 'intermolecular \u03B2_sheets (weak)']
 }
+
+
+
+
 
 five_peak = {
     'means': [1627,1651,1659, 1679,1700],
@@ -110,3 +126,33 @@ five_peak = {
     'assignments': ['aggregate \u03B2-strand/\u03B2-sheet',
                     'random coils',' \u03B1-helices', '\u03B2-turns', 'intermolecular \u03B2-sheets (weak)']
 }
+
+five_peakv2 = {
+    'means': [1610, 1627, 1650, 1679,1700],
+    'uncertainties': [(1605,1615),(1620, 1633), (1640, 1660), (1663, 1696), (1697, 1703)],
+    'relative_uncertainties': [5,5, 5, 5,5],
+    # 'uncertainties': [(1605,1615),(1616, 1637), (1638, 1662), (1663, 1696), (1697, 1703)],
+    # 'relative_uncertainties': [5,5, 5, 5,5],
+    'assignments': ['side-chains', 'aggregate \u03B2-strand/\u03B2-sheet',
+                    'random coils + \u03B1 helices', '\u03B2-turns', 'intermolecular \u03B2-sheets (weak)']
+}
+
+six_peak = {
+    'means': [1610, 1625,  1646, 1659, 1679, 1700],
+    'uncertainties': [(1605, 1615), (1616, 1637),
+                      (1638, 1646), (1647, 1662), (1663, 1696), (1697, 1703)],
+    'relative_uncertainties': [5, 10.5, 4, 7.5, 16.5, 3],
+    'assignments': ['(Tyr) side chains/aggregate strands', 'aggregate beta-strand/beta_sheet',
+                    'random coils', '\u03B1-helices', 'turns', 'intermolecular beta_sheets (weak)']
+}
+
+# six_peakv2 = {
+#     'means': [1610, 1627, 1646, 1659, 1679,1700],
+#     'uncertainties': [(1605,1615),(1620, 1637), (1638,1655), (1656,1662), (1663, 1696), (1697, 1703)],
+#     'relative_uncertainties': [reluncert,reluncert,reluncert,reluncert,reluncert,reluncert],
+#     # 'uncertainties': [(1605,1615),(1616, 1637), (1638, 1662), (1663, 1696), (1697, 1703)],
+#     # 'relative_uncertainties': [5,5, 5, 5,5],
+#     'assignments': ['side-chains', 'aggregate \u03B2-strand/\u03B2-sheet',
+#                     'random coils', '\u03B1 helices', '\u03B2-turns', 'intermolecular \u03B2-sheets (weak)']
+# }
+
