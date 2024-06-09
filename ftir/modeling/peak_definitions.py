@@ -155,4 +155,40 @@ six_peak = {
 #     'assignments': ['side-chains', 'aggregate \u03B2-strand/\u03B2-sheet',
 #                     'random coils', '\u03B1 helices', '\u03B2-turns', 'intermolecular \u03B2-sheets (weak)']
 # }
+four_peak = {
+    #used up until 1.22.2024, but needed to try IPA screening  settings from 3.2023
+    # 'means': [1620,  1636, 1679, 1700],
+    'means': [1627,  1650, 1679,1700],
 
+    #    #used up until 1.22.2024, but needed to try IPA screening  settings from 3.2023
+    # 'uncertainties': [(1613, 1626), (1627, 1664), (1668, 1685), (1697, 1703)],
+    'uncertainties': [(1613, 1632), (1640, 1657), (1668, 1685), (1697, 1703)],
+    # 'relative_uncertainties': [10, 12, 16,3],
+    # 'relative_uncertainties': [2, 2, 1,2],
+    'assignments': ['aggregate \u03B2-strand/\u03B2-sheet',
+                    'random coils + \u03B1 helices', '\u03B2-turns', 'intermolecular \u03B2-sheets (weak)']}
+
+four_peak_2024_1_26 = {
+
+    # 'means': [1620,  1636, 1679, 1700],
+    'means': [1624,  1638, 1679,1700],
+
+    # 'uncertainties': [(1613, 1626), (1627, 1664), (1668, 1685), (1697, 1703)],
+    'uncertainties': [(1613, 1630), (1631, 1657), (1668, 1685), (1697, 1703)],
+    # 'relative_uncertainties': [2, 2, 1,2],
+    'assignments': ['aggregate \u03B2-strand/\u03B2-sheet',
+                    'random coils + \u03B1 helices', '\u03B2-turns', 'intermolecular \u03B2-sheets (weak)']}
+
+four_peak_2023_3_15_IPAScreening_Samba = {
+
+
+    'means': [1627,  1650, 1679,1700],
+    'uncertainties': [(1613, 1629), (1634, 1664), (1668, 1685), (1697, 1703)],
+    'relative_uncertainties': [5, 2.5, 2.5, 4.5, 4, 4, 3, 3.5, 7, 5, 3],
+    'assignments': ['aggregate \u03B2-strand/\u03B2-sheet',
+                    'random coils + \u03B1 helices', '\u03B2-turns', 'intermolecular \u03B2-sheets (weak)']}
+
+four_peak_2024_MeOH = {
+    'means': [1625, 1637, 1679, 1700], 
+    'uncertainties': [(1613, 1626), (1632, 1642), (1668, 1685), (1697, 1703)], 
+    'assignments': ['aggregate β-strand/β-sheet', 'random coils + α helices', 'β-turns', 'intermolecular β-sheets (weak)']}
